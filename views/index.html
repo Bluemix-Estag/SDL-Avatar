@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html id="all_html">
+
+<head>
+    <title>SDL - Décio</title>
+    <link href="/style/animate.css" rel="stylesheet" />
+    <link href="/style/style.css" rel="stylesheet" />
+    <link href="/style/materialize.css" rel="stylesheet" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="translucent" />
+    <meta name="mobile-web-app-capable" content="yes">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--<meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no;user-scalable=0;"/>-->
+</head>
+
+<body >
+    <div class="header">
+        <nav class="transparent z-depth-0">
+            <div class="nav-wrapper transparent">
+
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="main-body" id="main-body">
+        <!--<div class="container" id="gif-holder">-->
+
+
+
+
+        <!--</div>-->
+        <div class="main" id="main">
+        </div>
+        <div class="bot" id="bot">
+            <div class="img-logo hide" id="gif-holder"><img src="/gifs/watson2.gif" width="80px" height="80px"></div>
+            <div class="img-logo hide" id="gif1-holder"><img src="/gifs/watson.gif" width="60px" height="60px"></div>
+            <h4 class="bot-text" id="test"></h4>
+            <br>
+            <br>
+            <div class="row hide" id="ref-btn">
+              <button class="btn btn-small blue lighten-1">Referencias</button>
+            </div>
+            <br>
+            <br>
+            <div class="row input-holder">
+                <!--<div class="input-field col s12">-->
+                <input type="text" class="col s12" id="chatInput" placeholder="Digite aqui" onkeypress="return newEvent(event);" style="color:white"
+                />
+                <!--</div>-->
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div id="modal1" class="modal bottom-sheet" style="max-height:80%;">
+        <div class="modal-content" style="display:inline" id="">
+            <table class="highlight centered">
+                <thead style="margin-right:0;width:100%;border-bottom: #e0e0e0 solid;">
+                    <tr>
+                        <th>Part Number</th>
+                        <th>Part Description</th>
+                        <th>Quantity</th>
+                    </tr>
+
+                </thead>
+                <tbody class="custom-table" id="modal-body">
+                </tbody>
+            </table>
+        </div>
+
+            <div class="modal-footer " id="testee" style="position:fixed;bottom:0;border-top:#e0e0e0 solid;">
+
+                <a href="#!" class="success modal-action modal-close grey lighten-2 btn-flat">Fechar</a>
+            </div>
+    </div>
+
+    <div class="footer" style="color:white; text-align: center;"><a href="codebakery.mybluemix.net" ><img src="../gifs/casa_logo_branco.gif" style="width: 16%"></a></div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="/scripts/materialize.js"></script>
+    <script src="/scripts/util.js"></script>
+    <script src="/scripts/scripts.js"></script>
+</body>
+
+</html>
