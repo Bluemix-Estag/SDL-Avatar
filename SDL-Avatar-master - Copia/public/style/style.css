@@ -1,0 +1,212 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'tradegothiclt-bold', sans-serif;
+}
+
+body {
+    /*height: 60%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(/images/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header,
+.footer {
+    margin: 0 !important;
+    padding: 0 !important;
+/*    height: 10%;*/
+    padding-bottom: 20px !important;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.img-logo{
+    width:  100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-body {
+    height: 100%;
+    display: flex;
+}
+
+.animate-main-in {
+    animation: fadeMainIn;
+}
+
+.animate-main-out {
+    animation: fadeMainOut;
+}
+
+.main {
+    visibility: visible;
+    width: 0;
+    background-color: rgba(100, 100, 100, 0.67);
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    overflow-y: scroll;
+}
+
+.animate-bot-in {
+    animation: fadeBotOut;
+}
+
+.animate-bot-out {
+    animation: fadeBotIn;
+}
+
+.bot {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    width: 100%;
+}
+.input-holder{
+    /*max-height: 30px;*/
+    width: 70%;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 20px !important;
+}
+
+#chatInput{
+    border-bottom: 1px solid #42a5f5 !important;
+}
+
+.bot-text {
+    text-align: center !important;
+    font-style: italic;
+}
+
+*{
+    font-size: 16px !important;
+}
+
+
+@keyframes fadeMainIn {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes fadeMainOut {
+    from {
+        width: 70%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+@keyframes fadeBotOut {
+    from {
+        width: 100%
+    }
+    to {
+        width: 30%;
+    }
+}
+
+@keyframes fadeBotIn {
+    from {
+        width: 30%
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+
+h4 {
+    font-size: 5em;
+    color: white;
+    text-transform: uppercase;
+}
+
+#caret {
+    border-right: .05em solid/;
+/*            border: none;*/
+    animation: caret 2s steps(10) infinite;
+}
+
+@keyframes caret {
+    50% {
+        border: transparent;
+    }
+}
+
+
+
+/*  Materialize Input */
+
+:-moz-placeholder{
+    text-align: center;
+}
+
+
+::-webkit-input-placeholder{
+    text-align: center;
+}
+
+:-ms-input-placeholder{
+    text-align: center;
+}
+
+/*Table e Modal*/
+#modal1{
+    overflow: hidden;
+    }
+
+thead, tbody tr {
+display:table;
+width:100%;
+table-layout:fixed;
+}
+
+tbody {
+display:block;
+max-height: 450px;
+overflow:auto;
+}
+thead {
+width: calc( 100% - 1em )
+}
+table {
+width:100%;
+height: 100% !important;
+}
+
+
+
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 23%;
+}
+
+
+.custom-table{
+  text-align: center;
+}

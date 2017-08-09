@@ -1,0 +1,187 @@
+
+
+  html,body{
+     margin: 0;
+	 padding: 0;
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+  }
+  body {
+   
+    /*background-position: ;*/
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    
+    background-image: url('../images/healthcare-bg2.jpg') !important;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position : center center;
+
+  }
+
+  header , footer{
+    height: 5% !important;
+    
+  }
+  main{
+      height: 90% !important;
+      padding: 30px 0 !important;
+  }
+.brand-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo-text{
+    margin-left: 10px;
+}
+
+.nav-wrapper{
+     box-shadow: 0px 5px 5px #888888 !important;
+}
+
+.page-footer{
+    box-shadow: 0px -5px 5px #888888 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.full-height{
+    height: 100% !important;
+}
+
+
+.chatbox{
+    position: absolute !important;
+    right: 0 !important;
+    bottom: 5%;
+    z-index: 999 !important;
+    
+}
+.collapsible{
+    margin: 0 !important;
+    padding: 0 !important;
+    min-width: 400px !important;
+    max-width: 400px !important;
+}
+.collapsible-body{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+#chat-popup{
+    overflow-y:  scroll;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 460px;
+    padding-bottom: 5px;
+}
+
+#chatInput{
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #000 !important;
+    width: 100% !important;
+    text-align: center;
+     color: black !important;
+     background-color: #fff !important;
+     opacity: 0.9 !important;
+}
+input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  text-align: center;
+}
+
+
+.chat-popup .chat-body {
+    opacity: 0;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    width: 100%;
+    animation-name: show_chat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*height: 80%;*/
+    overflow-y: scroll;
+    padding-top: 20px;
+}
+
+
+/* Remove scroll bar in chat box */
+
+.chat-popup .chat-body::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+@keyframes show_chat {
+    from {
+        opacity: 0;
+        z-index: -1;
+    }
+    to {
+        opacity: 1;
+        z-index: 99;
+    }
+}
+
+@keyframes hide_chat {
+    from {
+        opacity: 1;
+        z-index: 99;
+    }
+    to {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
+.chat-popup .chat-body .bubble {
+    padding: 13px 14px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    max-width: 78%;
+}
+
+.chat-popup .chat-body .bubble:before {
+    width: 8px;
+    height: 6px;
+    top: 5px;
+    position: relative;
+    display: inline-block;
+    content: '\00a0';
+    transform: rotate(29deg) skew(-35deg);
+}
+
+.chat-popup .chat-body .bubble.watson {
+    color: #fff;
+    background-color: #546e7a;
+    align-self: flex-start;
+    margin-left: 15px !important;
+}
+
+.chat-popup .chat-body .bubble.watson:before {
+    left: -18px !important;
+    background-color: #546e7a;
+}
+
+.chat-popup .chat-body .bubble.user:before {
+    right: -18px;
+    float: right;
+    background-color: #eceff1;
+}
+
+.chat-popup .chat-body .bubble.user {
+    color: #1a1a1a;
+    align-self: flex-end;
+    background-color: #eceff1;
+    margin-right: 20px;
+}

@@ -1,0 +1,10 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: sdl
+  host: sdl
+  disk_quota: 256M
+  services:
+  - sdl-cloudantNoSQLDB
